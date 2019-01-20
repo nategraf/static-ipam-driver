@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+    alice:
+        image: busybox
+        command: ifconfig
+        networks:
+            default:
+                ipv4_address: 172.16.30.5
+
+    bob:
+        image: busybox
+        command: ifconfig
+        networks:
+            default:
+                ipv4_address: 172.16.30.15
+
+networks:
+    default:
+        ipam:
+            driver: static
+            config:
+                - subnet: 172.16.30.0/24
