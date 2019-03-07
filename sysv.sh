@@ -6,8 +6,8 @@
 # Required-Stop:     $local_fs $network $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: Example
-# Description:       Static-ipam provides ip address non-management for libnetwork.
+# Short-Description: static-ipam driver
+# Description:       static-ipam driver allocates static networks for libnetwork
 ### END INIT INFO
 
 NAME="static-ipam"
